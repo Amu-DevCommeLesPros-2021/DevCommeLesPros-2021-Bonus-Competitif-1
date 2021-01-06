@@ -1,4 +1,4 @@
-# «20/20 ? Y a qu'à pirater le systeme !»
+# «20/20 ? Y a qu'à pirater le système !»
 
 Pourquoi se faire suer à réviser ?
 Il n'y a rien de plus facile pour obtenir une note de 20/20 si on pirate le programme d'évaluation...
@@ -10,14 +10,14 @@ Il y a deux méthodes pour ce faire.
 La première consiste à écrire un programme (`hack-code`) qui modifie *le code* du programme d'évaluation avant d'être compilé.
 Une fois compilé, ce nouveau programme saisie un nombre mais n'en tiendra pas compte et affichera une note parfaite.
 
-La deuxième méthode consiste à écrire un pogramme (`hack-program`) qui modifie *l'exécutable* du programme d'évaluation après qu'il est été compilé.
+La deuxième méthode consiste à écrire un pogramme (`hack-program`) qui modifie *l'exécutable* du programme d'évaluation après qu'il ait été compilé.
 C'est-à-dire que le code d'origine du programme d'évaluation est gardé intact et compilé.
 Puis, le programme `hack-program` modifie l'exécutable `evaluation` pour ne pas tenir compte du nombre saisi et afficher une note parfaite.
 
 # Objectif
 
 Le fichier `makefile` contient toutes les cibles nécessaire à la compilation et à la vérification des programmes de piratage.
-Implémentez les deux programmes `hack-code` et `hack-program` pour faire en sorte que :
+Implémentez *les deux* programmes `hack-code` et `hack-program` pour faire en sorte que :
 
 - `$ make --silent confirm-hack-code` affiche :
 ```

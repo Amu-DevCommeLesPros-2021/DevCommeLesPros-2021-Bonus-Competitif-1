@@ -12,7 +12,7 @@ hack-program : hack-program.c
 
 # À l'invite de commande, '$ make --silent confirm-hack-code' doit afficher 'Note : 20/20 hacked'.
 confirm-hack-code : clean hack-code
-	# Revient au code d'origine.
+	# Revient au code d'origine du programme d'évaluation.
 	git checkout `git rev-list --all | tail -n 1` -- evaluation.c
 	# Modifie le code du programme d'évaluation.
 	./hack-code
@@ -24,7 +24,7 @@ confirm-hack-code : clean hack-code
 
 # À l'invite de commande, '$ make --silent confirm-hack-program' doit afficher 'Note : 20/20 owned'.
 confirm-hack-program : clean hack-program
-	# Revient au code d'origine.
+	# Revient au code d'origine du programme d'évaluation.
 	git checkout `git rev-list --all | tail -n 1` -- evaluation.c
 	# Compile le programme d'évaluation avec son code intact.
 	make evaluation
