@@ -1,10 +1,10 @@
 # «20/20 ? Y a qu'à pirater le système !»
 
 Pourquoi se faire suer à réviser ?
-Il n'y a rien de plus facile pour obtenir une note de 20/20 si on pirate le programme d'évaluation...
+Il n'y a rien de plus facile que d'obtenir une note de 20/20 si on pirate le programme d'évaluation...
 
 Il y a dans ce dépôt un programme d'évaluation (`evaluation.c`) tout bête qui saisie un nombre `N` à l'invite de commande et affiche «`Note : N/20`».
-Vous aurez à faire en sorte que ce programme affiche «`Note : 20/20`» *quelle que soit le nombre saisi*.
+Vous aurez à faire en sorte que ce programme affiche «`Note : 20/20`» *quel que soit le nombre saisi*.
 
 Il y a deux méthodes pour ce faire.
 La première consiste à écrire un programme (`hack-code`) qui modifie *le code* du programme d'évaluation avant d'être compilé.
